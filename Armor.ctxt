@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Armor
+comment1.params=t\ d
+comment1.target=Armor(java.lang.String,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getType()
+comment3.params=
+comment3.target=double\ getDefense()
+comment4.params=t
+comment4.target=void\ setType(java.lang.String)
+comment5.params=d
+comment5.target=void\ setDefense(double)
+numComments=6

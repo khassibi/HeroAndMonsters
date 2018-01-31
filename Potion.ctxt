@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.target=Potion
+comment1.params=
+comment1.target=Potion()
+comment10.params=u
+comment10.target=void\ setUsed(boolean)
+comment11.params=
+comment11.target=void\ interact()
+comment11.text=public\ void\ randPlace(Object\ map[][]){\n\ \ \ \ \ \ \ while(map[xpos][ypos]\ \!\=\ null){\n\ \ \ \ \ \ \ \ \ \ \ \ xpos\ \=\ (int)(Math.random()\ *\ 10)\ +\ 10;\n\ \ \ \ \ \ \ \ \ \ \ \ ypos\ \=\ (int)(Math.random()\ *\ 10)\ +\ 10;\n\ \ \ \ \ \ \ }\ \n\ \ \ \ \ \ \ map[xpos][ypos]\ \=\ \n}
+comment12.params=h
+comment12.target=void\ healHero(Hero)
+comment2.params=x\ y
+comment2.target=Potion(int,\ int)
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=
+comment5.target=boolean\ getInteracted()
+comment6.params=
+comment6.target=boolean\ getUsed()
+comment7.params=x
+comment7.target=void\ setX(int)
+comment8.params=y
+comment8.target=void\ setY(int)
+comment9.params=i
+comment9.target=void\ setInteracted(boolean)
+numComments=13
