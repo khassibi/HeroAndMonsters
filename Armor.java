@@ -23,7 +23,7 @@ public class Armor{
         type = t;
     }
     public void setDefense(double d){
-        defense = d;
+        defense = d; 
     }
 }
 
