@@ -1,5 +1,5 @@
 public class Potion{
-    private int xpos;
+    private int xpos ;
     private int ypos;
     private int heal;
     private boolean interacted;
