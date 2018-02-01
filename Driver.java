@@ -37,19 +37,21 @@ public class Driver{
         Farmer f2 = new Farmer();
         farmers.add(f1);
         farmers.add(f2);
+        
+        int worldSize = 15;
 
         //generate the map
         System.out.println("* The map has been generated *");
-        Object map[][] = new Object[10][10];
-        String printedMap[][] = new String[10][10];
+        Object map[][] = new Object[worldSize][worldSize];
+        String printedMap[][] = new String[worldSize][worldSize];
         
         //fill map with objects
         map[hero.getY()][hero.getX()] = hero;
         printedMap[hero.getY()][hero.getX()] = "H  ";
         for(Monster obj: monsters){
             while(map[obj.getX()][obj.getY()] != null){
-               obj.setX((int)(Math.random() * 10));
-               obj.setY((int)(Math.random() * 10)); 
+               obj.setX((int)(Math.random() * worldSize));
+               obj.setY((int)(Math.random() * worldSize)); 
             }
             map[obj.getX()][obj.getY()] = obj;
             printedMap[obj.getX()][obj.getY()] = "M  ";
@@ -57,8 +59,8 @@ public class Driver{
         System.out.println("* The enemies have been placed *");
         for(Potion obj: potions){
             while(map[obj.getX()][obj.getY()] != null){
-               obj.setX((int)(Math.random() * 10));
-               obj.setY((int)(Math.random() * 10)); 
+               obj.setX((int)(Math.random() * worldSize));
+               obj.setY((int)(Math.random() * worldSize)); 
             }
             map[obj.getX()][obj.getY()] = obj;
             printedMap[obj.getX()][obj.getY()] = "P  ";
@@ -66,15 +68,15 @@ public class Driver{
         System.out.println("* The items have been placed *\n");
         for(Farmer obj: farmers){
             while(map[obj.getX()][obj.getY()] != null){
-               obj.setX((int)(Math.random() * 10));
-               obj.setY((int)(Math.random() * 10)); 
+               obj.setX((int)(Math.random() * worldSize));
+               obj.setY((int)(Math.random() * worldSize)); 
             }
             map[obj.getX()][obj.getY()] = obj;
             printedMap[obj.getX()][obj.getY()] = "F  ";
         }
         
         //prints map
-        printMap(map, printedMap);
+        printMap(map, printedMap, worldSize);
         
         //gameplay
         System.out.println("Hero begins his journey");
@@ -153,23 +155,23 @@ public class Driver{
             if(touched.size() != 0){
                 //prints map
                 //printMap(map, printedMap);
-                differentiate(touching(map, printedMap, hero), map, printedMap, hero);
+                differentiate(touching(map, printedMap, hero), map, printedMap, hero, worldSize);
             } else {
                 //prints map
-                printMap(map, printedMap);
+                printMap(map, printedMap, worldSize);
             }
 
         }
     }
     
-    public static void printMap(Object[][] map, String[][] printedMap){
+    public static void printMap(Object[][] map, String[][] printedMap, int worldSize){
         int k;
         String str = "";
         Monster m;
         Farmer f;
         Potion p;
-        for(int i=0; i<10; i++){
-            for(k=0; k<10; k++){
+        for(int i=0; i< worldSize; i++){
+            for(k=0; k< worldSize; k++){
                 if(map[i][k] == null){
                     str += "–  ";
                 } else {
@@ -230,7 +232,7 @@ public class Driver{
         return interactedPos;
     }
     
-    public static void differentiate(ArrayList<Integer> touchedPos, Object[][] map, String[][] printedMap, Hero h){
+    public static void differentiate(ArrayList<Integer> touchedPos, Object[][] map, String[][] printedMap, Hero h, int worldSize){
         //Scanner reads = new Scanner(System.in);
         ArrayList<Monster> monsters = new ArrayList<Monster>();
         ArrayList<Potion> potions = new ArrayList<Potion>();
@@ -254,7 +256,7 @@ public class Driver{
             }
         }
         //prints map
-        printMap(map, printedMap);
+        printMap(map, printedMap, worldSize);
         interact(monsters, potions, farmers, h);
     }
     
