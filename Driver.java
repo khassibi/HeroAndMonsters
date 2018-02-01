@@ -76,7 +76,7 @@ public class Driver{
         }
         
         //prints map
-        printMap(map, printedMap);
+        printMap(map, printedMap, worldSize);
         
         //gameplay
         System.out.println("Hero begins his journey");
@@ -155,23 +155,23 @@ public class Driver{
             if(touched.size() != 0){
                 //prints map
                 //printMap(map, printedMap);
-                differentiate(touching(map, printedMap, hero), map, printedMap, hero);
+                differentiate(touching(map, printedMap, hero), map, printedMap, hero, worldSize);
             } else {
                 //prints map
-                printMap(map, printedMap);
+                printMap(map, printedMap, worldSize);
             }
 
         }
     }
     
-    public static void printMap(Object[][] map, String[][] printedMap){
+    public static void printMap(Object[][] map, String[][] printedMap, int worldSize){
         int k;
         String str = "";
         Monster m;
         Farmer f;
         Potion p;
-        for(int i=0; i<10; i++){
-            for(k=0; k<10; k++){
+        for(int i=0; i< worldSize; i++){
+            for(k=0; k< worldSize; k++){
                 if(map[i][k] == null){
                     str += "–  ";
                 } else {
@@ -232,7 +232,7 @@ public class Driver{
         return interactedPos;
     }
     
-    public static void differentiate(ArrayList<Integer> touchedPos, Object[][] map, String[][] printedMap, Hero h){
+    public static void differentiate(ArrayList<Integer> touchedPos, Object[][] map, String[][] printedMap, Hero h, int worldSize){
         //Scanner reads = new Scanner(System.in);
         ArrayList<Monster> monsters = new ArrayList<Monster>();
         ArrayList<Potion> potions = new ArrayList<Potion>();
@@ -256,7 +256,7 @@ public class Driver{
             }
         }
         //prints map
-        printMap(map, printedMap);
+        printMap(map, printedMap, worldSize);
         interact(monsters, potions, farmers, h);
     }
     

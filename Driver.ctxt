@@ -2,12 +2,12 @@
 comment0.target=Driver
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=map\ printedMap
-comment2.target=void\ printMap(java.lang.Object[][],\ java.lang.String[][])
+comment2.params=map\ printedMap\ worldSize
+comment2.target=void\ printMap(java.lang.Object[][],\ java.lang.String[][],\ int)
 comment3.params=map\ printedMap\ h
 comment3.target=java.util.ArrayList\ touching(java.lang.Object[][],\ java.lang.String[][],\ Hero)
-comment4.params=touchedPos\ map\ printedMap\ h
-comment4.target=void\ differentiate(java.util.ArrayList,\ java.lang.Object[][],\ java.lang.String[][],\ Hero)
+comment4.params=touchedPos\ map\ printedMap\ h\ worldSize
+comment4.target=void\ differentiate(java.util.ArrayList,\ java.lang.Object[][],\ java.lang.String[][],\ Hero,\ int)
 comment5.params=mo\ po\ fa\ h
 comment5.target=void\ interact(java.util.ArrayList,\ java.util.ArrayList,\ java.util.ArrayList,\ Hero)
 numComments=6
