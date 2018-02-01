@@ -6,8 +6,8 @@ public class Farmer{
     private boolean interacted;
     
     public Farmer(){
-        xpos = (int)(Math.random() * 10);
-        ypos = (int)(Math.random() * 10);
+        xpos = (int)(Math.random() * 15);
+        ypos = (int)(Math.random() *15);
         //health = 100;
         health = (int)(Math.random() * 100) + 1;
         type = 2;

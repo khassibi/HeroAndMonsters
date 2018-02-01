@@ -10,8 +10,8 @@ public class Monster{
     private boolean interacted;
     
     public Monster(){
-        xpos = (int)(Math.random() * 10);
-        ypos = (int)(Math.random() * 10);
+        xpos = (int)(Math.random() * 15);
+        ypos = (int)(Math.random() * 15);
         attack = (int)(Math.random() * 30) + 1;
         health = (int)(Math.random() * 100) + 1;
         speed = (int)Math.round(Math.random() * 3);
@@ -63,9 +63,9 @@ public class Monster{
                     System.out.println("What do you want to do?\n" 
                                     + "1.  Fight\n2.  Flee");
                     option = reads.nextInt();
-                    while(option != 1 || option != 2){
+                    /*while(option != 1 || option != 2){
                         System.out.println("Only enter 1 or 2");
-                    }
+                    }*/
                 }
                 if(option == 1){
                     fight(h);

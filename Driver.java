@@ -1,6 +1,3 @@
-//HAVE A 0 arg constructor and a 2 arg constructor
-/*import java.util.List;
-import java.util.ArrayList;*/
 import java.io.*;
 import java.util.*;
 public class Driver{
@@ -89,7 +86,8 @@ public class Driver{
                 //maybe have words
                 System.out.println("** Game Over **");
                 break;
-            } else if(hero.getHealth() <= 0){
+                //FIX
+            } else if(hero.getHealth() > 0 && hero.getKilledM() ==6){
                 //maybe have words
                 System.out.println("* Hero has defeated all the monsters *");
                 System.out.println("** You win! **");

@@ -6,8 +6,8 @@ public class Potion{
     private boolean used;
     
     public Potion(){
-        xpos = (int)(Math.random() * 10);
-        ypos = (int)(Math.random() * 10);
+        xpos = (int)(Math.random() * 15);
+        ypos = (int)(Math.random() * 15);
         heal = 100;
         interacted = false;
         used = false;

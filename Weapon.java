@@ -6,8 +6,8 @@ public class Weapon{
     private int high;
     
     public Weapon(String t, int l, int h){
-        xpos = (int)(Math.random() * 10);
-        ypos = (int)(Math.random() * 10);
+        xpos = (int)(Math.random() * 15);
+        ypos = (int)(Math.random() * 15);
         type = t;
         low = l;
         high = h;

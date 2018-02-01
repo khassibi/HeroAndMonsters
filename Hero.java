@@ -8,7 +8,7 @@ public class Hero{
     
     public Hero(){
         xpos = 0;
-        ypos = 9;
+        ypos = 14;
         health = 100;
         sword = new Weapon("dagger", 10, 30);
         killedM = 0;
