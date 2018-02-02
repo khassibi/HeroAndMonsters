@@ -3,6 +3,7 @@ import java.util.*;
 public class Driver{
     //used to indicate which farmer is being interacted with
     public static int numF = 0;
+    public static int numPHas = 0;
     public static void main(String args[]){
         System.out.println("** Hero & Monsters **\n");
         
@@ -72,11 +73,13 @@ public class Driver{
             printedMap[obj.getX()][obj.getY()] = "F  ";
         }
         
+        //Storyline intro (add to this)
+        System.out.println("Hero begins his journey");
+        
         //prints map
-        printMap(map, printedMap, worldSize);
+        printMap(map, printedMap, worldSize, hero);
         
         //gameplay
-        System.out.println("Hero begins his journey");
         Scanner reads = new Scanner(System.in);
         String key;
         int oldX, oldY;
@@ -135,6 +138,7 @@ public class Driver{
             } else if(key.equals("p")){
                 if(potionHeroIsCarrying.getInteracted() && !potionHeroIsCarrying.getUsed()){
                     potionHeroIsCarrying.healHero(hero);
+                    numPHas--;
                 }
             }else {
                 System.out.println("You've entered an incorrect key.");
@@ -146,23 +150,17 @@ public class Driver{
             printedMap[hero.getY()][hero.getX()] = "H  ";
             ArrayList<Integer>touched = touching(map, printedMap, hero);
             
-            //prints map
-            //printMap(map, printedMap);
-            
             //check if touching anything
             if(touched.size() != 0){
-                //prints map
-                //printMap(map, printedMap);
                 differentiate(touching(map, printedMap, hero), map, printedMap, hero, worldSize);
             } else {
-                //prints map
-                printMap(map, printedMap, worldSize);
+                printMap(map, printedMap, worldSize, hero);
             }
 
         }
     }
     
-    public static void printMap(Object[][] map, String[][] printedMap, int worldSize){
+    public static void printMap(Object[][] map, String[][] printedMap, int worldSize, Hero h){
         int k;
         String str = "";
         Monster m;
@@ -203,6 +201,10 @@ public class Driver{
             str += "\n";
         }
         System.out.println(str);
+        System.out.println("Hero's Items: \n\tArmor: " + h.getArmor().getType()
+        + "  Weapon: " + h.getWeapon().getType()
+        + "  Potions: " + numPHas + "\n");
+
     }
     
     public static ArrayList<Integer> touching(Object[][] map, String[][] printedMap, Hero h){
@@ -254,13 +256,14 @@ public class Driver{
             }
         }
         //prints map
-        printMap(map, printedMap, worldSize);
+        printMap(map, printedMap, worldSize, h);
         interact(monsters, potions, farmers, h);
     }
     
     public static void interact(ArrayList<Monster> mo, ArrayList<Potion> po, ArrayList<Farmer> fa, Hero h){
         for(Potion p: po){
             p.interact();
+            numPHas++;
         }
         
         for(Farmer f: fa){

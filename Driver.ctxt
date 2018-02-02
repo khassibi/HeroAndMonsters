@@ -2,8 +2,8 @@
 comment0.target=Driver
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=map\ printedMap\ worldSize
-comment2.target=void\ printMap(java.lang.Object[][],\ java.lang.String[][],\ int)
+comment2.params=map\ printedMap\ worldSize\ h
+comment2.target=void\ printMap(java.lang.Object[][],\ java.lang.String[][],\ int,\ Hero)
 comment3.params=map\ printedMap\ h
 comment3.target=java.util.ArrayList\ touching(java.lang.Object[][],\ java.lang.String[][],\ Hero)
 comment4.params=touchedPos\ map\ printedMap\ h\ worldSize
