@@ -101,7 +101,7 @@ public class Monster{
     public void fight(Hero h){
         h.setHealth(h.getHealth() - attack * (1-h.getArmor().getDefense()));
         System.out.println("The monster attacked. Your health is now " + h.getHealth() + " xp.");
-        health -= (Math.random() * h.getWeapon().getHigh()) + h.getWeapon().getLow();
+        health -= Math.random() * (h.getWeapon().getHigh() - h.getWeapon().getLow()) + h.getWeapon().getLow();
         System.out.println("You quickly use your " + h.getWeapon().getType() + ". The monster's health has been lowered.");
     }
     
