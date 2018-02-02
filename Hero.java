@@ -13,7 +13,7 @@ public class Hero{
         health = 100;
         sword = new Weapon("dagger", 10, 30);
         killedM = 0;
-        armor = new Armor("nonexistent", 0);
+        armor = new Armor("trousers", 0.001);
         hides = 0;
     }
     
@@ -23,7 +23,7 @@ public class Hero{
         health = 100;
         sword = new Weapon("dagger", 10, 30);
         killedM = 0;
-        armor = new Armor("nonexistent", 0);
+        armor = new Armor("trousers", 0.001);
         hides = 0;
     }
     

@@ -3,7 +3,7 @@ public class Armor{
     private int ypos;*/
     private String type;
     private double defense;
-    
+  //NEED TO PRINT ARMOR SOMEWHERE?
     public Armor(String t, double d){
         //does it need position?
         /*xpos = (int)(Math.random() * 10);
