@@ -3,12 +3,15 @@ dependency1.from=Potion
 dependency1.to=Hero
 dependency1.type=UsesDependency
 <<<<<<< HEAD
+<<<<<<< HEAD
 dependency10.from=Farmer
 dependency10.to=Armor
 dependency10.type=UsesDependency
 dependency11.from=Farmer
 dependency11.to=Weapon
 dependency11.type=UsesDependency
+=======
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 >>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 dependency2.from=Driver
@@ -23,6 +26,7 @@ dependency4.type=UsesDependency
 dependency5.from=Driver
 dependency5.to=Farmer
 dependency5.type=UsesDependency
+<<<<<<< HEAD
 <<<<<<< HEAD
 dependency6.from=Monster
 dependency6.to=Hero
@@ -52,6 +56,8 @@ package.frame.height=600
 package.frame.width=800
 package.numDependencies=11
 =======
+=======
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 editor.fx.0.height=722
 editor.fx.0.width=800
 editor.fx.0.x=1096
@@ -67,6 +73,9 @@ package.editor.y=741
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=5
+<<<<<<< HEAD
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
+=======
 >>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 package.numTargets=7
 package.showExtends=true
@@ -83,8 +92,13 @@ target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target1.x=150
 target1.y=70
+=======
+target1.x=180
+target1.y=260
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target1.x=180
 target1.y=260
@@ -95,8 +109,13 @@ target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target2.x=250
 target2.y=10
+=======
+target2.x=500
+target2.y=280
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target2.x=500
 target2.y=280
@@ -107,8 +126,13 @@ target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target3.x=150
 target3.y=130
+=======
+target3.x=270
+target3.y=260
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target3.x=270
 target3.y=260
@@ -119,8 +143,13 @@ target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target4.x=150
 target4.y=230
+=======
+target4.x=500
+target4.y=40
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target4.x=500
 target4.y=40
@@ -131,8 +160,13 @@ target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target5.x=390
 target5.y=140
+=======
+target5.x=80
+target5.y=20
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target5.x=80
 target5.y=20
@@ -143,8 +177,13 @@ target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target6.x=150
 target6.y=10
+=======
+target6.x=90
+target6.y=260
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target6.x=90
 target6.y=260
@@ -155,8 +194,13 @@ target7.showInterface=false
 target7.type=ClassTarget
 target7.width=80
 <<<<<<< HEAD
+<<<<<<< HEAD
 target7.x=250
 target7.y=70
+=======
+target7.x=500
+target7.y=220
+>>>>>>> 96214350f4e8a6b22b0ceb84781d8b3072ed561b
 =======
 target7.x=500
 target7.y=220
