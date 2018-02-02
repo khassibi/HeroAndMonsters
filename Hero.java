@@ -5,6 +5,7 @@ public class Hero{
     private Weapon sword;
     private int killedM;
     private Armor armor;
+    private int hides;
     
     public Hero(){
         xpos = 0;
@@ -13,6 +14,7 @@ public class Hero{
         sword = new Weapon("dagger", 10, 30);
         killedM = 0;
         armor = new Armor("nonexistent", 0);
+        hides = 0;
     }
     
     public Hero(int x, int y){
@@ -22,6 +24,7 @@ public class Hero{
         sword = new Weapon("dagger", 10, 30);
         killedM = 0;
         armor = new Armor("nonexistent", 0);
+        hides = 0;
     }
     
     public int getX(){
@@ -42,6 +45,9 @@ public class Hero{
     public Armor getArmor(){
         return armor;
     }
+    public int getHides(){
+        return hides;
+    }
     
     public void setX(int x){
         xpos = x;
@@ -61,5 +67,9 @@ public class Hero{
     public void setArmor(Armor a){
         armor = a;
     }
+    public void setHides(int h){
+        hides = h;
+    }
+    //when we add a display screen, we should add the # of hides we have on here
 }
 

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 public class Driver{
-    //create global objects
+    //used to indicate which farmer is being interacted with
     public static int numF = 0;
     public static void main(String args[]){
         System.out.println("** Hero & Monsters **\n");
@@ -37,7 +37,7 @@ public class Driver{
         
         int worldSize = 15;
 
-        //generate the map
+        //generate the maps (1 with objects, 1 with a String that we display)
         System.out.println("* The map has been generated *");
         Object map[][] = new Object[worldSize][worldSize];
         String printedMap[][] = new String[worldSize][worldSize];

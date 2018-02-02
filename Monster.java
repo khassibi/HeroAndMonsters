@@ -92,6 +92,10 @@ public class Monster{
                     System.out.println("\nYou have succeeded in defeating the monster!");
                     alive = false;
                     h.setKilledM(h.getKilledM()+1);
+                    //Hero gains hides(currency) of defeated monsters
+                    //The # of gained hides is the speed x 2 so the Hero gains more hides for more difficulty
+                    h.setHides(h.getHides() + speed * 2);
+                    System.out.println("Hero has gained " + (speed * 2) + " hides, for a total of " + h.getHides());
                     break;
                 }
             }
